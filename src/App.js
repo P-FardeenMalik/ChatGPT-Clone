@@ -5,6 +5,9 @@ import msgIcon from "./assets/message.svg"
 import home from "./assets/home.svg";
 import saved from "./assets/bookmark.svg";
 import rocket from "./assets/rocket.svg";
+import sendBtn from "./assets/send.svg";
+import userIcon from "./assets/user-icon.png";
+import gptImgLogo from "./assets/chatgptLogo.svg";
 
 function App() {
   return (
@@ -21,14 +24,37 @@ function App() {
         </div>
 
         <div className="lowerSide">
-          <div className="listItems"> <img src={home} alt="Home"className="listitemsImg" />Home</div>
-          <div className="listItems"> <img src={saved} alt="Saved"className="listitemsImg" />Saved</div>
-          <div className="listItems"> <img src={rocket} alt="Upgrade"className="listitemsImg" />Upgrade to Pro</div>
+          <div className="listItems"> <img src={home} alt="Home"className="listItemsImg" />Home</div>
+          <div className="listItems"> <img src={saved} alt="Saved"className="listItemsImg" />Saved</div>
+          <div className="listItems"> <img src={rocket} alt="Upgrade"className="listItemsImg" />Upgrade to Pro</div>
         </div>
       </div>
-      <div className="main"></div>
+      <div className="main">
+          <div className="chats">
+              <div className="chat">
+                <img className="chatImg" src={userIcon} alt="" /> <p className="txt">Lorem</p>
+              </div>
+
+              <div className="chat bot">
+                <img className="chatImg" src={gptImgLogo} alt="" /> <p className="txt">lorem adf adf adfla f lfaljf la daldfjajfa    ja lfl jla a ls fa l l;fa ;aff ;f fsadla ;l fldasl;f dj asj jldjajfoejaooea oiejfoi hghuijfjaljfoidajf oiodf ajfifajfoiofhhgkdnfkanfkjkjdfjehfakjnfjknnj  fjdfafjioifoi io djajfoiejlkfvknfkakfkfjf  fardeen akmalkjfldjlkka fardeene almlaljojmmal a j jioadjfm  maklj  kmakljkj  malik af dlf  fl d</p>
+              </div>
+          </div>
+          <div className="chatFooter">
+            <div className="inp">
+              <input type="text" placeholder="Send a message"/><button className="send"> <img src={sendBtn} alt="Send" /></button>
+            </div>
+            <p>ChatGPT can make mistakes. Check important info.</p>
+          </div>
+      </div>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
